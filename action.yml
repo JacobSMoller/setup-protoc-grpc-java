@@ -1,0 +1,17 @@
+name: 'Setup Protoc Gen Grpc Java'
+description: >
+  Install protoc-gen-grpc-java for your GitHub Action workflows.
+
+inputs:
+  version:
+    description: 'The version of protoc-gen-grpc-java to install.'
+    required: true
+    default: '1.43.2'
+
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
+
+branding:
+  icon: 'square'
+  color: 'blue'
